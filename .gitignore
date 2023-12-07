@@ -1,0 +1,5 @@
+.vs
+data/invoices
+data/access.log
+node_modules
+.env
