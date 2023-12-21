@@ -130,7 +130,7 @@ app.use((error, req, res, next) => {
 });
 connectToDatabase(process.env.MONGO_STRING)
 .then(result => {
-    app.listen(3000);
+    app.listen(process.env.PORT || 3000);
     console.log("connected successfully.")
 })
 .catch(err => {
